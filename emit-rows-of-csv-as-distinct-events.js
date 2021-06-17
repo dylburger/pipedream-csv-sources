@@ -18,6 +18,7 @@ module.exports = {
       columns: true,
       skip_empty_lines: true
     })
+    console.log("Hello, world")
     for (const record of records) {
       this.$emit(record, { summary: JSON.stringify(record) });
     }
